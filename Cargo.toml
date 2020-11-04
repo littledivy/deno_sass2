@@ -1,0 +1,27 @@
+[package]
+name = "deno_sass2"
+version = "0.1.0"
+authors = ["divy-work <dj.srivastava23@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+path = "lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { version = "0.2.64", features = ["serde-serialize"] }
+wee_alloc = { version = "0.4.5", optional = true }
+grass = { path = "./grass" }
+
+[profile.release]
+lto = true
+opt-level = "z"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+
+[features]
+default = ["wee_alloc"]
+
