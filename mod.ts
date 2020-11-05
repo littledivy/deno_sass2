@@ -9,5 +9,3 @@ export function compile(source: string): string {
   return wasm_compile(source, {});
 }
 
-console.log(compile("a { color: #fff; }"));
-
