@@ -18,7 +18,7 @@
 ## Example
 
 ```typescript
-import { compile } from "https://deno.land/x/sass/mod.ts";
+import { compile } from "https://nest.land/sass@1.0.0/mod.ts";
 
 compile("a { color: #000; }");
 ```

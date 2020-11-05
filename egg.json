@@ -1,0 +1,22 @@
+{
+  "$schema": "https://x.nest.land/eggs@0.3.2/src/schema.json",
+  "name": "sass",
+  "entry": "./mod.ts",
+  "description": "Wasmified version of the near-feature-complete Grass Sass compiler for Deno.",
+  "homepage": "https://github.com/littledivy/deno_sass2",
+  "version": "2.0.0",
+  "releaseType": "major",
+  "files": [
+    "mod.ts",
+    "example.ts",
+    "wasm.js",
+    "README.md",
+    "lib.rs"
+  ],
+  "checkFormat": false,
+  "checkTests": false,
+  "checkInstallation": false,
+  "check": true,
+  "ignore": [],
+  "unlisted": false
+}
